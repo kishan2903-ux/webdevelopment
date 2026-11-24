@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - LETS SHOP</title>
+  <link rel = "stylesheet" href="scc.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <a href="home.html" class="logo">LETS SHOP</a>
+    <a href="home.html" class="nav-btn">Back to Home</a>
+  </header>
+
+  <!-- Sign Up Form Section -->
+  <main class="auth-wrapper">
+    <div class="auth-card">
+      <h2>Create Account</h2>
+      <p class="subtitle">Join LETS SHOP for exclusive deals</p>
+
+      <!-- Redirects to home.html with #logged-in state -->
+      <form action="home.html#logged-in">
+        <div class="name-row">
+          <div class="form-group title-group">
+            <label for="title">Title</label>
+            <select id="title" required>
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+            </select>
+          </div>
+
+          <div class="form-group name-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+
+      <p class="switch-link">
+        Already have an account? <a href="login.html">Log In</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

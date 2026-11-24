@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR (Matching home.html) ================= */
+.navbar {
+    background-color: #0b132b;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #5bc0eb;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: #5bc0eb;
+    color: #0b132b;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #3da9d8;
+}
+
+/* ================= LOGIN CARD ================= */
+.auth-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.auth-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 390px;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(11, 19, 43, 0.12);
+}
+
+.auth-card h2 {
+    color: #0b132b;
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 24px;
+}
+
+.auth-card p.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #5bc0eb;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.92;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #555;
+}
+
+.switch-link a {
+    color: #dd2476;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
